@@ -1,23 +1,68 @@
 aid: sesamesoftware
+
 name: Sesame Software
-description: 'Sesame Software is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://static.wixstatic.com/media/ed693f_15162d894b17444980615f07d667be82~mv2.png/v1/fill/w_1200,h_630,al_c/ed693f_15162d894b17444980615f07d667be82~mv2.png
+
+description: 'Sesame Software provides data management tools that back up, replicate, migrate, and integrate data from Salesforce, NetSuite, Oracle, Microsoft Dynamics and over 20 other endpoints into a customer‑owned database. It serves enterprises that need to automate data movement, ensure compliance, and maintain control over where their data resides.'
+
 url: https://raw.githubusercontent.com/api-evangelist/sesamesoftware/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
-- Company
-apis: []
+- Data Backup
+- Data Replication
+- Data Migration
+- Data Integration
+- Enterprise Data Management
+- Salesforce
+- NetSuite
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/sesamesoftware-llms.txt
+- type: Hosts
+  url: hosts/sesamesoftware-hosts.yml
+- type: Vendors
+  url: vendors/sesamesoftware-vendors.yml
+- type: Blog
+  url: https://www.sesamesoftware.com/blog
+- type: DomainSecurity
+  url: security/sesamesoftware-domain-security.yml
 - type: Website
   url: https://sesamesoftware.com/
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: "The website is built on Wix and renders content via JavaScript, preventing machine‑readable API specifications from being discovered."
+  evidence:
+    - url: https://www.sesamesoftware.com/
+      status: 301
+  checked: '2026-10-21'
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

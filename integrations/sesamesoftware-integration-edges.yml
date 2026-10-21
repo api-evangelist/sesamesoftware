@@ -1,0 +1,18 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/sesamesoftware/integrations
+- https://zapier.com/apps/sesame-software/integrations
+- https://n8n.io/integrations/sesamesoftware/
+- https://composio.dev/toolkits/sesamesoftware
+- https://monid.ai/tools/sesamesoftware
+checked:
+- https://composio.dev/toolkits/sesamesoftware
+- https://monid.ai/tools/sesamesoftware
+- https://n8n.io/integrations/sesamesoftware/
+- https://zapier.com/apps/sesame-software/integrations
+- https://zapier.com/apps/sesamesoftware/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

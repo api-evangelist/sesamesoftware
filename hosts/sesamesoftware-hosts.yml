@@ -1,0 +1,51 @@
+generated: '2026-10-21'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 3
+  own: 3
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - marketing
+  - website
+hosts:
+- host: api.sesamesoftware.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: sesamesoftware.com
+  role: api
+  relation: own
+- host: sesamesoftware.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - cdn
+  - hosting
+  vendor: cloudflare
+  registrable_domain: sesamesoftware.com
+  role: website
+  relation: own
+- host: www.sesamesoftware.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Blog
+  serves: []
+  registrable_domain: sesamesoftware.com
+  role: marketing
+  relation: own
